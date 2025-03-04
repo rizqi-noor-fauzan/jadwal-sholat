@@ -17,7 +17,7 @@ Aplikasi ini menampilkan **jadwal sholat** berdasarkan kota yang dicari oleh pen
 1️⃣ **Clone repository ini:**
 
 ```bash
-git clone https://github.com/username/jadwal-sholat-app.git
+https://github.com/rizqi-noor-fauzan/jadwal-sholat.git
 cd jadwal-sholat-app
 ```
 

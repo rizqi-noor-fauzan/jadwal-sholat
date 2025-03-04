@@ -6,10 +6,10 @@
 Aplikasi ini menampilkan **jadwal sholat** berdasarkan kota yang dicari oleh pengguna. Data diperoleh dari API dan ditampilkan dengan tampilan yang responsif serta mudah digunakan.
 
 🔹 **Fitur:**
-✅ Menampilkan jadwal sholat berdasarkan lokasi pengguna
-✅ Desain sederhana dan responsif
-✅ Menggunakan API untuk mendapatkan data jadwal sholat
-✅ Loader animasi sebelum data muncul
+1. ✅ Menampilkan jadwal sholat berdasarkan lokasi pengguna
+2. ✅ Desain sederhana dan responsif
+3. ✅ Menggunakan API untuk mendapatkan data jadwal sholat
+4. ✅ Loader animasi sebelum data muncul
 ---
 
 ## **⚙️ Instalasi**

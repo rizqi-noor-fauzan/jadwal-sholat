@@ -51,19 +51,38 @@ https://api.ryzendesu.vip/api/search/jadwal-sholat?kota={nama_kota}
 
 ```json
 {
-  "status": true,
-  "message": "Success",
+  "total": 2,
   "schedules": [
     {
-      "lokasi": "Cirebon",
-      "daerah": "Jawa Barat",
+      "lokasi": "KAB. CIREBON",
+      "daerah": "JAWA BARAT",
       "jadwal": {
-        "tanggal": "02 Maret 2025",
-        "subuh": "05:30",
-        "dzuhur": "12:00",
-        "ashar": "15:30",
-        "maghrib": "18:00",
-        "isya": "19:15"
+        "tanggal": "Selasa, 04/03/2025",
+        "imsak": "04:26",
+        "subuh": "04:36",
+        "terbit": "05:48",
+        "dhuha": "06:15",
+        "dzuhur": "12:01",
+        "ashar": "15:02",
+        "maghrib": "18:07",
+        "isya": "19:16",
+        "date": "2025-03-04"
+      }
+    },
+    {
+      "lokasi": "KOTA CIREBON",
+      "daerah": "JAWA BARAT",
+      "jadwal": {
+        "tanggal": "Selasa, 04/03/2025",
+        "imsak": "04:26",
+        "subuh": "04:36",
+        "terbit": "05:48",
+        "dhuha": "06:15",
+        "dzuhur": "12:01",
+        "ashar": "15:02",
+        "maghrib": "18:07",
+        "isya": "19:16",
+        "date": "2025-03-04"
       }
     }
   ]

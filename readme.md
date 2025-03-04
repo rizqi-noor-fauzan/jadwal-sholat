@@ -25,7 +25,7 @@ cd jadwal-sholat-app
 3️⃣ **Pastikan Anda menginstal ekstensi berikut di Chrome:**
 
 - **Allow CORS:**  
-  [Download di Chrome Web Store](https://chrome.google.com/webstore/detail/allow-cors-access-control/lfhmikememgdcahcdlaciloimgbfbnfm)
+  [Download di Chrome Web Store](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)
 
 ---
 

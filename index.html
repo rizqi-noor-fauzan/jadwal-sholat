@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Sholat App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 font-poppins">
+    <section
+      class="container mx-auto min-h-screen flex flex-col items-center justify-center p-4"
+    >
+      <div class="loader">
+        <span class="hour"></span>
+        <span class="min"></span>
+        <span class="circel"></span>
+      </div>
+      <div
+        class="w-full max-w-md md:max-w-2xl bg-white shadow-lg rounded-lg p-6"
+      >
+        <h1
+          class="text-2xl md:text-3xl font-semibold text-center text-blue-600 mb-4"
+        >
+          Jadwal Sholat
+        </h1>
+
+        <div class="flex gap-2">
+          <input
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="text"
+            id="input"
+            placeholder="Masukkan Nama Kota..."
+          />
+          <button
+            class="py-2 px-5 text-white rounded bg-blue-500 hover:bg-blue-600 transition"
+            onclick="fetchJadwalSholat()"
+          >
+            Cari
+          </button>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-10" id="result">
+          <!-- <div class="shadow-md rounded-lg bg-blue-100 p-4">
+            <h2 class="text-center text-xl font-semibold text-blue-700">
+              Cirebon
+            </h2>
+            <h3 class="text-center text-md text-gray-600">02 Maret 2025</h3>
+
+            <div class="mt-4 overflow-x-auto">
+              <table class="w-full text-center border-collapse">
+                <thead>
+                  <tr class="bg-blue-600 text-white">
+                    <th class="py-2 px-4 border">Subuh</th>
+                    <th class="py-2 px-4 border">Dzuhur</th>
+                    <th class="py-2 px-4 border">Ashar</th>
+                    <th class="py-2 px-4 border">Maghrib</th>
+                    <th class="py-2 px-4 border">Isya</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white text-gray-800">
+                    <td class="py-2 px-4 border">05:30</td>
+                    <td class="py-2 px-4 border">12:00</td>
+                    <td class="py-2 px-4 border">15:30</td>
+                    <td class="py-2 px-4 border">18:00</td>
+                    <td class="py-2 px-4 border">19:15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> -->
+          <!-- <div class="shadow-md rounded-lg bg-blue-100 p-4">
+            <h2 class="text-center text-xl font-semibold text-blue-700">
+              Cirebon
+            </h2>
+            <h3 class="text-center text-md text-gray-600">02 Maret 2025</h3>
+
+            <div class="mt-4 overflow-x-auto">
+              <table class="w-full text-center border-collapse">
+                <thead>
+                  <tr class="bg-blue-600 text-white">
+                    <th class="py-2 px-4 border">Subuh</th>
+                    <th class="py-2 px-4 border">Dzuhur</th>
+                    <th class="py-2 px-4 border">Ashar</th>
+                    <th class="py-2 px-4 border">Maghrib</th>
+                    <th class="py-2 px-4 border">Isya</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white text-gray-800">
+                    <td class="py-2 px-4 border">05:30</td>
+                    <td class="py-2 px-4 border">12:00</td>
+                    <td class="py-2 px-4 border">15:30</td>
+                    <td class="py-2 px-4 border">18:00</td>
+                    <td class="py-2 px-4 border">19:15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

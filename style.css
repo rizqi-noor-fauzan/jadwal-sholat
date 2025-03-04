@@ -1,0 +1,77 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #357abd;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 #f1f1f1;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 8px solid #4a90e2;
+  border-radius: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader span {
+  display: block;
+  background: #4a90e2;
+}
+
+.loader .hour,
+.loader .min {
+  width: 4px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 15.7px;
+  left: 16px;
+  animation: loading 1.2s linear infinite;
+  transform-origin: top center;
+}
+
+.loader .min {
+  height: 15px;
+  animation: loading 4s linear infinite;
+}
+
+.loader .circel {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
